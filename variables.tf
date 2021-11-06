@@ -23,14 +23,8 @@ variable "gke_num_nodes" {
   default     = 1
 }
 
-variable "gke_blue_nodes_zone" {
+variable "gke_zone" {
   type        = string
-  description = "Zone of the GKE blue nodes"
+  description = "Zone of the GKE cluster"
   default     = "europe-west1-b"
-}
-
-variable "gke_green_nodes_zone" {
-  type        = string
-  description = "Zone of the GKE green nodes"
-  default     = "europe-west1-c"
 }

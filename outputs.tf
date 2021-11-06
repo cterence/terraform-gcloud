@@ -7,5 +7,5 @@ output "gke_master_version" {
 }
 
 output "gcloud_get_credentials_command" {
-  value = "gcloud container clusters get-credentials ${google_container_cluster.cluster.name} --region ${var.region}"
+  value = "gcloud container clusters get-credentials ${google_container_cluster.cluster.name} --region ${var.gke_zone}"
 }
